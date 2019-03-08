@@ -1,15 +1,19 @@
-package Circle;
+package Rectangle;
 import java.util.Scanner;
 public class Client {
 	public static void main(String[] args)
 	{
-	Scanner sc = new Scanner(System.in);
-	System.out.print("Enter the radius : ");
-	double v = sc.nextDouble();
-	Circle C = new Circle();
+	Scanner sc = new Scanner(System.in);//input Scanner
+	System.out.print("Enter the Rectangle Width  : ");
+	double w = sc.nextDouble();//input the width
+	System.out.print("Enter the Rectangle Length : ");
+	double len = sc.nextDouble();//input the length
 	
-	C.SetRadius(v);
-	System.out.print("The Circle Radius is "+C.GetRadius()+"\n");
-	System.out.print("The Circle  Area  is "+C.GetArea());
+	Rectangle rcg = new Rectangle();
+	//create a object
+	rcg.setWidth(w);//declare the width
+	rcg.setLength(len);//declare the length
+	//output the area
+	System.out.print("\nThe Rectangle  Area  is : "+rcg.getArea());
 }
 }
